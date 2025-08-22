@@ -22,7 +22,7 @@ else
   cp ${HOME}/.ssh/authorized_keys ${HOME}/.ssh/authorized_keys.${BACKUP_EXT}
   cat ${PUBKEY} >> ${HOME}/.ssh/authorized_keys
 
-
+  mkidr ${HOME}/.ssh
   #add ssh config to access fugaku
   cp ${HOME}/.ssh/config ${HOME}/.ssh/config.${BACKUP_EXT}
   {
